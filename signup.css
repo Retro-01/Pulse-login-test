@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: orbi;
+  src: url(fonts/orbitron-bold.otf);
+}
+@font-face {
+  font-family: exo;
+  src: url(fonts/Exo2-ExtraBold.ttf);
+}
+@font-face {
+  font-family: exol;
+  src: url(fonts/Exo2-ExtraLight.ttf);
+}
+body{
+  background-color: #111010;
+  justify-content: center;
+  align-items: center;
+}
+header{
+  /* border: 2px solid blue; */
+    width: 90%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+header img{
+  width: 120px;
+  height: 120px;
+  animation: floatbounce 3s ease-in-out infinite ;
+  border-radius: 50%;
+}
+section{
+  width: auto;
+  height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.container{
+  max-width: 400px;
+  width: 90%;
+  height: 700px;
+  margin: auto;
+}
+h1{
+  color: whitesmoke;
+  font-weight: 900;
+  font-style: normal;
+  font-family: exo;
+  font-size: 48px;
+  text-align: center;
+  margin: 10px auto;
+  padding-top: -80px;
+}
+form{
+  margin-left: 40px;
+  margin-top: 20px;
+  margin: auto;
+}
+form input{
+  width: 91%;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1.5px solid rgb(157, 155, 155);
+  border-radius: 7px;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 17px;
+}
+.form input:focus{
+  outline: none;
+  border: 2px solid #ff0000;
+  transition: 0.3s ease;
+}
+form input:placeholder-shown{
+  padding-left: 20px;
+}
+label{
+  color: white;
+  font-family: exo;
+}
+p#phone{
+  text-align: left;
+  margin-top: -px;
+  margin-left: 3px;
+  margin-bottom: 15px;
+  font-family: exol;
+  color: #ff0000;
+  text-decoration: underline;
+}
+#submit{
+  color: aliceblue;
+  display: flex;
+  background-color: #ff0000;
+  outline: none;
+  border: none;
+  width: 100%;
+  margin-top: -5px;
+  border-radius: 27px;
+  /* height: 40px; */
+  padding: 0.7rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+#submit:hover{
+  background-color: #ec2525;
+  transform: scale(1.05);
+}
+.container p {
+  color: #fff;
+  text-align: center;
+  font-family: exo;
+  margin-top: -10px;
+}
+.cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+.link{
+  width: 50vw;
+  display: flex;
+  max-width: 400px;
+  background-color: transparent;
+  border: 2px solid rgb(128, 126, 126);
+  align-items: center;
+  color: #fff;
+  height: 3.5vw;
+  justify-content: left;
+  text-align: left;
+  justify-content: left;
+  margin: 0 auto;
+  border-radius: 27px;
+  transition: transform 0.2s ease,box-shadow 0.2s ease;
+  font-family: exo;
+  opacity: 0.5;
+}
+.link:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 42px rgba(255, 0, 0, 0.2);
+  border: 2px solid rgb(255, 0, 0);
+  opacity: 1;
+}
+.link i{
+  margin-right: 10px;
+  font-size: 24px;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 50px; 
+}
+.link i:hover{
+  color: #ff0000;
+}
+.signup {
+  margin-top: 30px;
+}
+.signup p{
+  color: rgb(128, 126, 126);
+  text-align: center;
+  font-family: exo;
+  font-size:17px;
+  font-weight: 500;
+}
+.signup a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.signup a:hover{
+  color: #ff0000;
+  text-decoration: underline;
+  transform: scale(1.4);
+}
+@keyframes floatbounce{
+  0%{
+    transform: translateY(0px);
+    box-shadow: 3px 5px 10px rgba(255, 0 , 0, 0.3);
+  }
+  50%{
+    transform: translateY(10px);
+    box-shadow: 4px 15px 20px rgb(255, 0 , 0, 0.6);
+  }
+  75%{
+    transform: translateY(0px);
+    box-shadow: 4px 3px 8px rgb(255, 0 , 0, 0.2);
+  }
+  100%{
+    transform: translateY(0px);
+    box-shadow: 4px 5px 10px rgb(255, 0 , 0, 0.3);
+  }
+}
+@media (max-width: 671px) {
+  .link{
+    width: 70vw;
+    max-width: 300px;
+    min-width: 100px;
+    max-height: 60px;
+    min-height: 50px;
+    font-size: 14px;
+  }
+
+}
+@media (min-width: 672px) {
+    .link{
+      max-width: 400px;
+      max-height: 60px;
+      min-height: 50px;
+    }
+}
+@media (max-width:826px){
+  .link{
+    min-width: 100%;
+  }
+}
+@media (max-width:375px) {
+  .container h1{
+    font-size: 30px;
+  }
+}
